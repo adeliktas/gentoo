@@ -1,0 +1,11 @@
+--- a/toolkit/mozapps/extensions/internal/AddonSettings.jsm	2021-11-29 15:01:30.000000000 +0100
++++ b/toolkit/mozapps/extensions/internal/AddonSettings_unsigned.jsm	2021-12-18 00:03:25.898474747 +0100
+@@ -39,7 +39,7 @@
+ }
+ 
+ if (AppConstants.MOZ_REQUIRE_SIGNING && !Cu.isInAutomation) {
+-  makeConstant("REQUIRE_SIGNING", true);
++  makeConstant("REQUIRE_SIGNING", false);
+   makeConstant("LANGPACKS_REQUIRE_SIGNING", true);
+ } else {
+   XPCOMUtils.defineLazyPreferenceGetter(
