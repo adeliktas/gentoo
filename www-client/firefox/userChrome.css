@@ -1,0 +1,42 @@
+/*
+about:config
+toolkit.legacyUserProfileCustomizations.stylesheets = true
+about:support
+~/.mozilla/firefox/<profile>/chrome/userChrome.css
+*/
+
+/*.downloadButton {
+    //transform: scale(2.7, 2.7);
+    min-width: 90px;
+    min-height: 52px;
+}*/
+
+#downloadsListBox .downloadButton{
+  height: unset !important;
+  margin-inline: 0 !important;
+  border-radius: 0 !important;
+}
+
+#downloadsListBox .downloadButton > .button-box{
+  border-left: 1px solid var(--panel-separator-color) !important;
+  padding-inline: 18px !important;
+}
+
+#downloadsListBox > richlistitem{
+  display: flex;
+  height: unset !important;
+  padding-inline: 0 !important;
+  border-radius: 0 !important;
+}
+#downloadsListBox .downloadMainArea{
+  flex-grow: 1;
+  padding: 1.2em 0 !important;
+}
+#downloadsPanel-mainView{
+  padding: 0 !important;
+}
+#downloadsFooterButtons > toolbarseparator{ margin: 0 !important; }
+
+#downloadsFooterButtons > #downloadsHistory:not(:hover){
+  background: rgba(120,120,120,0.1) !important;
+}
