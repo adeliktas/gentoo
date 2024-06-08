@@ -3,10 +3,17 @@
 
 EAPI=8
 
-inherit gnome.org gnome2-utils meson systemd xdg
+inherit gnome2-utils meson systemd xdg
 
 DESCRIPTION="Remote desktop daemon for GNOME using pipewire"
 HOMEPAGE="https://gitlab.gnome.org/GNOME/gnome-remote-desktop"
+
+if [[ ${PV} == 9999 ]]; then
+	inherit git-r3
+	EGIT_REPO_URI="https://gitlab.gnome.org/GNOME/gnome-remote-desktop.git"
+else
+    inherit gnome.org
+fi
 
 LICENSE="GPL-2+"
 SLOT="0"
