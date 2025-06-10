@@ -1,0 +1,1 @@
+https://github.com/gentoo/gentoo/tree/86c7a89fadfab885b302e7d12a50b36ea17fd291/app-text/gocr
