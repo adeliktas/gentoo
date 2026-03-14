@@ -1,0 +1,13 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=configure install postinst prepare unpack
+DEPEND=dev-qt/qtbase:6[gui,network,widgets] dev-qt/qtcharts:6 x11-libs/libxkbcommon[X] x11-libs/libXrandr x11-libs/libX11 dev-qt/qttools:6[linguist] media-libs/mesa[X(+)] x11-libs/libdrm
+DESCRIPTION=App for display info about radeon card
+EAPI=8
+HOMEPAGE=https://github.com/blackPantherOS/radeon-profile-qt6
+INHERIT=git-r3 qmake-utils desktop
+LICENSE=GPL-2
+PROPERTIES=live
+RDEPEND=dev-qt/qtbase:6[gui,network,widgets] dev-qt/qtcharts:6 x11-libs/libxkbcommon[X] x11-libs/libXrandr x11-libs/libX11
+SLOT=0
+_eclasses_=git-r3	7b584b5dc33e3bc66ff5b9271bf41764	toolchain-funcs	da0a71e3a72194ca0b88d5b045d721ac	qmake-utils	28f99dba9219112f4785f46ed426a021	desktop	26d57169ca094c04be416993844ec8bc
+_md5_=efa42c07598a65cf43209766b31770fa

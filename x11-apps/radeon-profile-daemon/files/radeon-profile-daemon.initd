@@ -1,0 +1,12 @@
+#!/sbin/openrc-run
+
+description="Radeon Profile Daemon"
+
+command="/usr/bin/radeon-profile-daemon"
+command_background=true
+pidfile="/run/${RC_SVCNAME}.pid"
+
+depend() {
+	need localmount
+	use net
+}
