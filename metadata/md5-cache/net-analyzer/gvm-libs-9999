@@ -1,0 +1,15 @@
+BDEPEND=dev-vcs/git app-alternatives/yacc app-alternatives/lex virtual/pkgconfig doc? ( app-text/doxygen[dot] app-text/xmltoman app-text/htmldoc dev-perl/CGI dev-perl/SQL-Translator ) test? ( dev-libs/cgreen ) app-alternatives/ninja >=dev-build/cmake-3.28.5 >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install prepare setup test unpack
+DEPEND=acct-user/gvm >=app-crypt/gpgme-1.7.0:= >=dev-libs/glib-2.42:2 >=dev-libs/hiredis-1.1.0:= dev-libs/libgcrypt:= dev-libs/libgpg-error >=dev-libs/cJSON-1.7.14 >=dev-libs/libxml2-2.0:2= >=net-libs/gnutls-3.2.15:= net-libs/libnet:1.1 net-libs/libpcap >=net-libs/libssh-0.6.0:= >=sys-apps/util-linux-2.25.0 sys-libs/libxcrypt:= >=virtual/zlib-1.2.8:= net-libs/paho-mqtt-c:1.3 >=net-misc/curl-7.83.0 ldap? ( net-nds/openldap:= ) radius? ( net-dialup/freeradius-client )
+DESCRIPTION=Greenbone Vulnerability Management (GVM) libraries
+EAPI=8
+HOMEPAGE=https://www.greenbone.net https://github.com/greenbone/gvm-libs/
+INHERIT=cmake git-r3 toolchain-funcs
+IUSE=doc ldap test radius
+LICENSE=GPL-2+
+PROPERTIES=live
+RDEPEND=acct-user/gvm >=app-crypt/gpgme-1.7.0:= >=dev-libs/glib-2.42:2 >=dev-libs/hiredis-1.1.0:= dev-libs/libgcrypt:= dev-libs/libgpg-error >=dev-libs/cJSON-1.7.14 >=dev-libs/libxml2-2.0:2= >=net-libs/gnutls-3.2.15:= net-libs/libnet:1.1 net-libs/libpcap >=net-libs/libssh-0.6.0:= >=sys-apps/util-linux-2.25.0 sys-libs/libxcrypt:= >=virtual/zlib-1.2.8:= net-libs/paho-mqtt-c:1.3 >=net-misc/curl-7.83.0 ldap? ( net-nds/openldap:= ) radius? ( net-dialup/freeradius-client )
+RESTRICT=!test? ( test )
+SLOT=0
+_eclasses_=toolchain-funcs	5195689ff6a73b0e789acfa09d4fbcb9	flag-o-matic	fd3558f73f6503093adee69adf41020d	multiprocessing	c4ce7cd4e666b59ad4165ec2de032d09	ninja-utils	d063ea1900a793f93eb095010d6d9156	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	3395ce6618fc5c7af03335471b896644	git-r3	7b584b5dc33e3bc66ff5b9271bf41764
+_md5_=870a3bf75c3587f7b3dc951a47d238f2
