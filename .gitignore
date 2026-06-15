@@ -1,1 +1,3 @@
 cross-avr/
+.ignore_net-analyzer/
+.gitignore
